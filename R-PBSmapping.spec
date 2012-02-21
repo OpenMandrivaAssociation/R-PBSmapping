@@ -1,10 +1,10 @@
-%bcond_without bootstrap
+%bcond_with bootstrap
 %global packname  PBSmapping
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
 Version:          2.61.9
-Release:          1
+Release:          2
 Summary:          Mapping Fisheries Data and Spatial Analysis Tools
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
