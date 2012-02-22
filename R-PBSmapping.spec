@@ -10,16 +10,14 @@ Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/%{packname}_%{version}.tar.gz
-%if %{with bootstrap}
-Requires:         R-foreign R-deldir 
-%else
-Requires:         R-foreign R-maptools R-deldir 
+Requires:         R-foreign R-deldir
+%if %{without bootstrap}
+Requires:         R-maptools
 %endif
-BuildRequires:    R-devel Rmath-devel texlive-collection-latex 
-%if %{with bootstrap}
-BuildRequires:    R-foreign R-deldir 
-%else
-BuildRequires:    R-foreign R-maptools R-deldir 
+BuildRequires:    R-devel Rmath-devel texlive-collection-latex
+BuildRequires:    R-foreign R-deldir
+%if %{without bootstrap}
+BuildRequires:    R-maptools
 %endif
 
 %description
