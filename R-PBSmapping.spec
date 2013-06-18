@@ -4,7 +4,7 @@
 
 Name:             R-%{packname}
 Version:          2.65.40
-Release:          1
+Release:          2
 Summary:          Mapping Fisheries Data and Spatial Analysis Tools
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
