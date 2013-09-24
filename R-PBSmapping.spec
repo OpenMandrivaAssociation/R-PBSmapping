@@ -3,13 +3,13 @@
 %global rlibdir  %{_libdir}/R/library
 
 Name:             R-%{packname}
-Version:          2.65.40
-Release:          2
+Version:          2.66.53
+Release:          1
 Summary:          Mapping Fisheries Data and Spatial Analysis Tools
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
 URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
-Source0:          http://cran.r-project.org/src/contrib/PBSmapping_2.65.40.tar.gz
+Source0:          http://cran.r-project.org/src/contrib/PBSmapping_2.66.53.tar.gz
 Requires:         R-foreign R-deldir
 %if %{without bootstrap}
 Requires:         R-maptools
@@ -65,3 +65,4 @@ rm -f %{buildroot}%{rlibdir}/R.css
 %{rlibdir}/%{packname}/demo
 %{rlibdir}/%{packname}/help
 %{rlibdir}/%{packname}/libs
+
