@@ -8,7 +8,7 @@ Release:          2
 Summary:          Mapping Fisheries Data and Spatial Analysis Tools
 Group:            Sciences/Mathematics
 License:          GPL (>= 2)
-URL:              http://cran.r-project.org/web/packages/%{packname}/index.html
+URL:              https://cran.r-project.org/web/packages/%{packname}/index.html
 Source0:          http://cran.r-project.org/src/contrib/PBSmapping_2.65.40.tar.gz
 Requires:         R-foreign R-deldir
 %if %{without bootstrap}
